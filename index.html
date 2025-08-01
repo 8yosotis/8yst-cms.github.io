@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Commission</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold gradient-text">Commission Info</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#pricing" class="text-slate-600 hover:text-amber-500 transition-colors">ราคา</a>
+                <a href="#details" class="text-slate-600 hover:text-amber-500 transition-colors">รายละเอียดงาน</a>
+                <a href="#portfolio" class="text-slate-600 hover:text-amber-500 transition-colors">ผลงาน</a>
+                <a href="#tos" class="text-slate-600 hover:text-amber-500 transition-colors">ข้อตกลง</a>
+                <a href="#contact" class="text-slate-600 hover:text-amber-500 transition-colors">ติดต่อ</a>
+            </nav>
+            <a href="#contact" class="bg-amber-500 text-white font-bold py-2 px-4 rounded-full hover:bg-amber-600 transition-colors shadow-md">ติดต่อสอบถาม</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Welcome Section -->
+        <section class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">ยินดีต้อนรับสู่หน้าคอมมิชชัน</h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">ขอบคุณที่สนใจในผลงานของเราค่ะ! กรุณาอ่านรายละเอียดด้านล่างให้ครบถ้วนก่อนทำการสั่งซื้อนะคะ</p>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-8">เรทราคา (Price List)</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="section-card">
+                    <h4 class="text-2xl font-semibold mb-4 text-center border-b pb-2">แบบไม่ลงสี (Non-color)</h4>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex justify-between items-center"><span>Bust Up (ครึ่งบน)</span> <span class="font-bold text-amber-600">200 บาท</span></li>
+                        <li class="flex justify-between items-center"><span>Half Body (ครึ่งตัว)</span> <span class="font-bold text-amber-600">450 บาท</span></li>
+                        <li class="flex justify-between items-center"><span>Full Body (เต็มตัว)</span> <span class="font-bold text-amber-600">950 บาท</span></li>
+                    </ul>
+                </div>
+                <div class="section-card">
+                    <h4 class="text-2xl font-semibold mb-4 text-center border-b pb-2">แบบลงสีพื้นฐาน (Basic Coloring)</h4>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex justify-between items-center"><span>Bust Up (ครึ่งบน)</span> <span class="font-bold text-amber-600">250 บาท</span></li>
+                        <li class="flex justify-between items-center"><span>Half Body (ครึ่งตัว)</span> <span class="font-bold text-amber-600">500 บาท</span></li>
+                        <li class="flex justify-between items-center"><span>Full Body (เต็มตัว)</span> <span class="font-bold text-amber-600">1000 บาท</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commission Details Section -->
+        <section id="details" class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-8">รายละเอียดงานที่รับและไม่รับ</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Left Column: Do / Don't -->
+                <div class="flex flex-col gap-8">
+                    <!-- Do's -->
+                    <div class="section-card border-t-4 border-green-400">
+                        <h4 class="text-2xl font-semibold mb-4 text-green-600">✅ รับวาด (Do)</h4>
+                        <ul class="space-y-2 list-disc list-inside text-slate-700">
+                            <li>OC, Persona</li>
+                            <li>Fanart (Official ต้องอนุมัติ)</li>
+                            <li>Anime/Game: Yumejoshi/OCxCanon*</li>
+                            <li>Anime/Game: Official & Fanon ships*</li>
+                        </ul>
+                        <p class="text-xs text-slate-500 mt-2">*กรณีเป็นเกมจีบ Official ต้องอนุมัติเรื่องความสัมพันธ์</p>
+                    </div>
+                    <!-- Don'ts -->
+                    <div class="section-card border-t-4 border-red-400">
+                         <h4 class="text-2xl font-semibold mb-4 text-red-600">❌ ไม่รับวาด (Don't)</h4>
+                         <div class="grid sm:grid-cols-2 gap-x-8">
+                            <ul class="space-y-2 list-disc list-inside text-slate-700">
+                                <li>ผู้ชายมีกล้ามระดับ gym bro</li>
+                                <li>ตัวละครที่มีภาพลักษณ์เป็นคนชรา</li>
+                                <li>พื้นหลังแบบเต็มกระดาษ</li>
+                                <li>ภาพเสมือน (Realism)</li>
+                            </ul>
+                            <ul class="space-y-2 list-disc list-inside text-slate-700">
+                                <li>Heavy gore</li>
+                                <li>Furry</li>
+                                <li>Mecha</li>
+                                <li>Gay (M/M) รับเฉพาะ Chibi</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Strengths / Can try -->
+                <div class="flex flex-col gap-8">
+                    <!-- Strengths -->
+                    <div class="section-card border-t-4 border-sky-400">
+                        <h4 class="text-2xl font-semibold mb-4 text-sky-600">✨ ชำนาญเป็นพิเศษ (Strengths)</h4>
+                        <ul class="space-y-2 list-disc list-inside text-slate-700">
+                            <li>ผู้หญิง (สวย, น่ารัก, หล่อ, ฟูตะ)</li>
+                            <li>Kemonomimi (สัตว์มีขน)</li>
+                            <li>Suggestive, Partial Nudity</li>
+                            <li>Lesbian (F/F)</li>
+                        </ul>
+                    </div>
+                    <!-- Not Skilled -->
+                    <div class="section-card border-t-4 border-yellow-400">
+                        <h4 class="text-2xl font-semibold mb-4 text-yellow-600">⚠️ ไม่ค่อยชำนาญ (Can try)</h4>
+                        <ul class="space-y-2 list-disc list-inside text-slate-700">
+                            <li>ผู้ชาย</li>
+                            <li>พื้นหลังที่เป็นสิ่งของ</li>
+                            <li>Explicit Nudity, Pornographic</li>
+                            <li>Light gore</li>
+                            <li>Straight (F/M)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-8">ผลงาน (Portfolio)</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"><img src="https://placehold.co/600x800/fff0f5/db2777?text=ผลงาน+1" alt="ตัวอย่างผลงานที่ 1" class="w-full h-auto object-cover"></div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"><img src="https://placehold.co/600x800/ecfccb/4d7c0f?text=ผลงาน+2" alt="ตัวอย่างผลงานที่ 2" class="w-full h-auto object-cover"></div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"><img src="https://placehold.co/600x800/e0f2fe/0ea5e9?text=ผลงาน+3" alt="ตัวอย่างผลงานที่ 3" class="w-full h-auto object-cover"></div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"><img src="https://placehold.co/600x800/f3e8ff/7e22ce?text=ผลงาน+4" alt="ตัวอย่างผลงานที่ 4" class="w-full h-auto object-cover"></div>
+                <div class="bg-white rounded-lg shadow-hidden transform hover:scale-105 transition-transform duration-300"><img src="https://placehold.co/600x800/fffbeb/f59e0b?text=ผลงาน+5" alt="ตัวอย่างผลงานที่ 5" class="w-full h-auto object-cover"></div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"><img src="https://placehold.co/600x800/fef2f2/dc2626?text=ผลงาน+6" alt="ตัวอย่างผลงานที่ 6" class="w-full h-auto object-cover"></div>
+            </div>
+            <p class="text-center text-slate-500 mt-6">*รูปภาพเป็นเพียงตัวอย่างสำหรับแสดงผลเท่านั้น</p>
+        </section>
+
+        <!-- Terms of Service Section -->
+        <section id="tos" class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-8">ข้อตกลงและเงื่อนไข (Terms of Service)</h3>
+            <div class="grid lg:grid-cols-2 gap-10">
+                <!-- General ToS -->
+                <div class="section-card border-t-4 border-amber-400">
+                    <h4 class="text-2xl font-semibold mb-6 text-center">ข้อตกลงทั่วไป</h4>
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-4"><div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div><h5 class="font-semibold text-slate-800">ระยะเวลาและการติดตามงาน</h5><p class="text-slate-600 text-sm">งาน <strong>Half & Full body</strong> ที่มีรายละเอียดเยอะจะไม่รับงานเร่ง สามารถทวงงาน <strong>Chibi/Bust up</strong> ได้ทุกสุดสัปดาห์ และ <strong>Half/Full body</strong> ได้ทุกสิ้นเดือน (หลังถึงคิว)</p></div></div>
+                        <div class="flex items-start gap-4"><div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg></div><div><h5 class="font-semibold text-slate-800">การชำระเงิน</h5><p class="text-slate-600 text-sm"><strong>Chibi & Bust up</strong> ต้องจ่ายเต็มจำนวนเท่านั้น สำหรับงานประเภทอื่น สามารถจ่ายเต็มหรือมัดจำ 50% ได้</p></div></div>
+                        <div class="flex items-start gap-4"><div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg></div><div><h5 class="font-semibold text-slate-800">การยกเลิกงาน</h5><p class="text-slate-600 text-sm">หากยกเลิกงานหลังจากชำระเงินมัดจำแล้ว จะไม่มีการคืนเงินมัดจำในทุกกรณี</p></div></div>
+                        <div class="flex items-start gap-4"><div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div><div><h5 class="font-semibold text-slate-800">การใช้งานผลงาน</h5><p class="text-slate-600 text-sm">เรามีสิทธิ์นำผลงานไปลงพอร์ต (จะเบลอให้หากแสดงสาธารณะ) หรือใช้เป็นตัวอย่าง หากไม่ต้องการให้นำไปใช้ จะมีค่าใช้จ่ายเพิ่มเติม 50%</p></div></div>
+                        <div class="flex items-start gap-4"><div class="flex-shrink-0 w-8 h-8 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4H5z"></path></svg></div><div><h5 class="font-semibold text-slate-800">Giveaway & ไฟล์งาน</h5><p class="text-slate-600 text-sm">กรุณาแจ้งล่วงหน้าหากต้องการไฟล์พื้นหลังใส (.png) หรือจะนำภาพไปทำ Giveaway (และต้องส่งของที่ผลิตให้เรา 1 ชิ้น)</p></div></div>
+                    </div>
+                </div>
+                <!-- Commercial ToS -->
+                <div class="section-card border-t-4 border-sky-400">
+                    <h4 class="text-2xl font-semibold mb-6 text-center">ข้อตกลงเชิงพาณิชย์</h4>
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-4"><div class="flex-shrink-0 w-8 h-8 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><div><h5 class="font-semibold text-slate-800">ราคาและลิขสิทธิ์</h5><p class="text-slate-600 text-sm">เนื่องจากไม่มีการเก็บราคาเชิงพาณิชย์แยกต่างหาก คุณและผู้วาดจะมีลิขสิทธิ์ในผลงานร่วมกัน</p></div></div>
+                        <div class="flex items-start gap-4"><div class="flex-shrink-0 w-8 h-8 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg></div><div><h5 class="font-semibold text-slate-800">การแบ่งรายได้ (Revenue Share)</h5><p class="text-slate-600 text-sm">หากนำผลงานไปใช้ในเชิงพาณิชย์และมีรายได้มากกว่า <strong class="text-sky-700">10,000 บาท/เดือน</strong> จะต้องแบ่งรายได้ให้ผู้วาด <strong class="text-sky-700">20%</strong></p></div></div>
+                        <div class="flex items-start gap-4"><div class="flex-shrink-0 w-8 h-8 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div><div><h5 class="font-semibold text-slate-800">รอบการแบ่งรายได้</h5><p class="text-slate-600 text-sm">การแบ่งรายได้จะเกิดขึ้นเมื่อสิ้นสุดการจำหน่าย หรือหากไม่มีการสิ้นสุด จะแบ่งรายได้เป็นรายเดือน</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center bg-white py-12 rounded-2xl shadow-lg border">
+            <h3 class="text-3xl font-bold mb-4">สนใจสอบถามเพิ่มเติม?</h3>
+            <p class="text-lg text-slate-600 max-w-xl mx-auto mb-8">สามารถติดต่อสอบถามรายละเอียดเพิ่มเติม หรือส่งบรีฟงานได้ที่ช่องทางด้านล่างนี้เลยค่ะ</p>
+            <div class="flex justify-center items-center gap-4 flex-wrap">
+                <a href="#" target="_blank" class="inline-flex items-center justify-center gap-3 bg-indigo-500 text-white font-bold py-3 px-6 rounded-full hover:bg-indigo-600 transition-all duration-300 shadow-md transform hover:-translate-y-1"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.283 4.417c-1.552-1.295-3.443-2.222-5.49-2.71.045.136.09.273.136.409-1.045-.227-2.136-.363-3.272-.409-.045-.09-.09-.182-.136-.272C9.432 2.195 7.54 3.122 6 4.417c-2.954 3.545-3.227 7.454-2.227 10.863.955 3.182 3.864 5.682 7.273 6.364.364.09.727.136 1.09.227.182-.364.318-.727.455-1.09-.636-.182-1.227-.455-1.773-.773-.09-.045-.182-.09-.227-.136 0 0 0 0 0-.045 0 0-.045 0-.045-.045 1.045.727 2.227 1.227 3.454 1.5.318-.455.636-.909.864-1.409.955.273 1.955.455 2.955.545.318.455.636.909.909 1.364.59-.045 1.182-.136 1.773-.227 4.09-1.136 6.955-4.636 7.5-8.818.59-4.364-1.455-8.273-4.59-9.818zm-11.5 9.545c-1.136 0-2.045-.955-2.045-2.136 0-1.182.909-2.136 2.045-2.136s2.045.955 2.045 2.136c0 1.182-.909 2.136-2.045 2.136zm8.182 0c-1.136 0-2.045-.955-2.045-2.136 0-1.182.909-2.136 2.045-2.136s2.045.955 2.045 2.136c0 1.182-.909 2.136-2.045 2.136z"></path></svg><span>Discord</span></a>
+                <a href="#" target="_blank" class="inline-flex items-center justify-center gap-3 bg-sky-600 text-white font-bold py-3 px-6 rounded-full hover:bg-sky-700 transition-all duration-300 shadow-md transform hover:-translate-y-1"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12Z" clip-rule="evenodd"></path></svg><span>Facebook</span></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-12">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-500">
+            <p>&copy; 2024 Google. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
